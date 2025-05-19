@@ -1,27 +1,35 @@
-﻿@model CourseEnrollmentSystem.Models.Course
+﻿@model CourseEnrollmentSystem.Models.Student
 
 @{
     ViewBag.Title = "Details";
-    Layout = "~/Views/Shared/_Layout.cshtml ";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h2>Details</h2>
 
 <div>
-    <h4>Course</h4>
+    <h4>Student</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.CourseName)
+            @Html.DisplayNameFor(model => model.EnrolledCourse.CourseName)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.CourseName)
+            @Html.DisplayFor(model => model.EnrolledCourse.CourseName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StudentName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StudentName)
         </dd>
 
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.CourseId }) |
+    @Html.ActionLink("Edit", "Edit", new { id = Model.StudentId }) |
     @Html.ActionLink("Back to List", "Index")
 </p>

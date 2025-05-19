@@ -22,6 +22,7 @@ SQL Server
 Bootstrap 5
 
 HTML/CSS
+
 📁 Project Structure
 Models – Contains the Student and Course classes, defining the data structure and relationships (including foreign keys).
 
